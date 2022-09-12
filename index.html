@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script type="text/javascript" src="index.js"></script>
+
+    <title>Portfolio website</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- <div class="navbar">
+      <ul>
+        <li><a href="index.html#footer">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact me</a></li>
+      </ul>
+    </div> -->
+    <div class="navbar" id="myTopnav">
+      <a href="#logo">Logo</a>
+      <a href="#home">Home</a>
+      <a href="#about">About me</a>
+      <a href="#project">Projects</a>
+      <a href="#contact">Contact me</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        <!-- <img src=""/assets alt="" srcset/assets=""> -->
+      </a>
+    </div>
+    <section>
+      <div id="1" class="hero">
+        <div class="content">
+          <h1>Welcome</h1>
+          <p>Hey it's Pratik Amonkar</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about me -->
+    <div class="container">
+      <h1>About us</h1>
+      <div class="left-box">
+        <p>
+          My name is Pratik Amonkar.<br />I live in Amona.I am pursuing computer
+          engineering in agnel institute of technolody and design.<br />
+          I mostly attracted to programming,developing apps and website.<br />
+        </p>
+      </div>
+      <div class="right-box">
+        <img src="./hero-section-img.jpg" alt="" width="80%" height="80%" />
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <section>
+      <div class="project-section">
+        <h1>Todo App</h1>
+        <!-- <ul>
+          <li>Todo app is created using a flutter</li>
+          <li>We can perform CRUD operation :- Create Read Update Delete</li>
+          <li>All the tasks and todos are store locally on your mobile</li>
+        </ul> -->
+        <!-- <p>How to create side-by-side images with CSS Flexbox:</p> -->
+        <h3>Screenshots</h3>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--1">
+            <img
+              src="./screenshot_todo_1.jpeg"
+              alt="Gallery image 1"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img
+              src="./screenshot_todo_2.jpeg"
+              alt="Gallery image 2"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img
+              src="./screenshot_todo_3.jpeg"
+              alt="Gallery image 3"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img
+              src="./screenshot_todo_4.jpeg"
+              alt="Gallery image 4"
+              class="gallery__img"
+            />
+          </figure>
+        </div>
+        <!-- <div class="project-screenshot-row">
+          <div class="project-screenshot-col">
+            <img src="./assets/screenshot_todo_1.jpeg" alt="Snow" class="resp-img" style="width: 60%" />
+          </div>
+          <div class="project-screenshot-col">
+            <img
+              src="./assets/screenshot_todo_2.jpeg"
+              alt="Forest"
+              class="resp-img"
+              style="width: 60%"
+            />
+          </div>
+          <div class="project-screenshot-col">
+            <img
+              src="./assets/screenshot_todo_3.jpeg"
+              alt="Mountains"
+              class="resp-img"
+              style="width: 60%"
+            />
+          </div>
+          <div class="project-screenshot-col">
+            <img
+              src="./assets/screenshot_todo_4.jpeg"
+              alt="Mountains"
+              class="resp-img"
+              style="width: 60%"
+            />
+          </div>
+        </div> -->
+      </div>
+      <div class="project-section">
+        <h1>Units converter</h1>
+        <ul>
+          <li>Units converter app is created using a flutter</li>
+          <li>
+            We can convert any units from one another like celcius to
+            fahrenheit,byte to megabytes etc
+          </li>
+        </ul>
+        <!-- <p>How to create side-by-side images with CSS Flexbox:</p> -->
+        <h3>Screenshots</h3>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--1">
+            <img
+              src="./screenshot_converter_1.jpeg"
+              alt="Gallery image 1"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img
+              src="./screenshot_converter_2.jpeg"
+              alt="Gallery image 2"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img
+              src="./screenshot_converter_3.jpeg"
+              alt="Gallery image 3"
+              class="gallery__img"
+            />
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img
+              src="./screenshot_converter_4.jpeg"
+              alt="Gallery image 4"
+              class="gallery__img"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us section -->
+    <section class="demo">
+      <div class="form-container">
+        <form>
+          <label>Full name</label>
+          <input
+            name="name"
+            placeholder="John Doe"
+            type="text"
+            width="100px;"
+          />
+          <label>Email id</label>
+          <input name="email" placeholder="johndoe@gmail.com" type="text" />
+          <label>Contact Number</label>
+          <input name="contact" placeholder="123456789" type="text" />
+          <label>Message</label>
+          <textarea cols="15" name="message" placeholder="fdfdfgdfg" rows="10">
+          </textarea>
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div class="footer">
+      <p>©PratikAmonkar 2022</p>
+    </div>
+  </body>
+  <script>
+    // function myFunction() {
+    //   var x = document.getElementById("myTopnav");
+    //   if (x.className === "navbar") {
+    //     x.className += " resp";
+    //   } else {
+    //     x.className = "navbar";
+    //   }
+    // }
+  </script>
+</html>
